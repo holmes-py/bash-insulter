@@ -75,9 +75,8 @@ print_message () {
     # Seed RANDOM with an integer of some length
     RANDOM=$(od -vAn -N4 -tu < /dev/urandom)
 
-    # Print a randomly selected message, but only about half the time to annoy the user a
-    # little bit less.
-    if [[ $((${RANDOM} % 2)) -lt 1 ]]; then
+    # Made it evil, now prints a message everytime a wrong command is entered.
+    if [[ $((${RANDOM} % 2)) ]]; then
         message=${messages[${RANDOM} % ${#messages[@]}]}
         printf "\\n  %s\\n\\n" "$(tput bold)$(tput setaf 1)${message}$(tput sgr0)" >&2
     fi

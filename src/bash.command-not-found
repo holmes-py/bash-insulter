@@ -2,6 +2,13 @@ print_message () {
 
     local messages
     local message
+    notfriendly=(
+        "I am _seriously_ considering 'rm -rf /'-ing myself..."
+        "This is why you get to see your children only once a month."
+        "This is why nobody likes you."
+        "Two wrongs don't make a right, take your parents as an example."
+        "You must have been born on a highway because that's where most accidents happen."
+    )
 
     messages=(
         "Boooo!"
@@ -43,9 +50,6 @@ print_message () {
         "Perhaps computers is not for you..."
         "Why are you doing this to me?!"
         "Don't you have anything better to do?!"
-        "I am _seriously_ considering 'rm -rf /'-ing myself..."
-        "This is why you get to see your children only once a month."
-        "This is why nobody likes you."
         "Are you even trying?!"
         "Try using your brain the next time!"
         "My keyboard is not a touch screen!"
@@ -56,8 +60,6 @@ print_message () {
         "Brains aren't everything. In your case they're nothing."
         "I don't know what makes you so stupid, but it really works."
         "You are not as bad as people say, you are much, much worse."
-        "Two wrongs don't make a right, take your parents as an example."
-        "You must have been born on a highway because that's where most accidents happen."
         "If what you don't know can't hurt you, you're invulnerable."
         "If ignorance is bliss, you must be the happiest person on earth."
         "You're proof that god has a sense of humor."

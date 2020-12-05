@@ -131,7 +131,7 @@ if function_exists command_not_found_handle; then
     fi
 else
     orig_command_not_found_handle () {
-        printf "%s: %s: command not found\\n" "$0" "$1" >&2
+        # printf "%s: %s: command not found\\n" "$0" "$1" >&2
         return 127
     }
 fi
